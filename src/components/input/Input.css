@@ -4,6 +4,7 @@ height: 1.9rem;
 border-color:#363636;
 border-style: solid;
 border-radius: 0.3rem;
+border-width: 0.1rem;
 
 }
 
@@ -12,4 +13,5 @@ outline-style: solid 2px;
 outline-color: #1E90FF;
 border-radius: 0.3rem;
 border: none;
+outline-width: thin;
 } 

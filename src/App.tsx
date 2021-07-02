@@ -13,17 +13,17 @@ const [numput, setNumPut] = useState('')
 
 
 
-  async function Alert(){
+  async function Search(){
    await api.get(numput).then((data)=>{
-      setCount(data.data.hits)
-      console.log(count)
+      setdata(data.data.hits)
+      console.log(data)
     }).catch((error)=>{
        console.log(error)
     })
   
   }
 
-  const [count, setCount] = useState([])
+  const [data, setdata] = useState([])
 
   return (
     <div className="App">
@@ -34,20 +34,20 @@ const [numput, setNumPut] = useState('')
           <Title text="Biblioteca OBS"/>
           <div className="input-div">
               <Input prinput={setNumPut}/>
-              <Button click={Alert}/>
+              <Button click={Search}/>
           </div>
         </div>
-
-           {count.map((runner:any, key:number)=>(
+            
+           {data.map((runner:any, key:number)=>(
 
              <div className="list-div" key={key}>
              <Content author={runner.author ? runner.author:"Autor não informado."} title={runner.title ? runner.title:"Titulo não informado"} url={runner.url ? runner.url:"Url não informada"} />
                   
              </div>
            ))}
-           
+           </div>
             
-       </div>
+      
     </div>
   );
 }
