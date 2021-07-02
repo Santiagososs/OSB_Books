@@ -1,0 +1,11 @@
+.btn-search{
+    border-radius: 50px;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+    background-color: cornflowerblue;
+    color: cornsilk;
+    font-size: 2.2rem;
+    margin-left: 2rem;
+    
+}

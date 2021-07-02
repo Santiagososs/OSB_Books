@@ -1,0 +1,15 @@
+.input-area{
+width: 17rem;
+height: 1.9rem;
+border-color:#363636;
+border-style: solid;
+border-radius: 0.3rem;
+
+}
+
+textarea:focus, input:focus, select:focus {
+outline-style: solid 2px;
+outline-color: #1E90FF;
+border-radius: 0.3rem;
+border: none;
+} 

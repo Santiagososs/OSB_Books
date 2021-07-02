@@ -1,0 +1,44 @@
+.content-container{
+    width: 110%;
+    height: 100%;
+    background-color:#84a7c4;
+    border-radius: 0.8rem;
+    margin-bottom: 0.7rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.list-content{
+    font-size: 135%;
+    margin-bottom: 0.8rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+@media screen and (min-height: 768px){
+    .content-container{
+    width: 24rem;
+    height: 7rem;
+    background-color:#84a7c4;
+    border-radius: 0.8rem;
+    margin-bottom: 0.7rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    }
+}
+
+@media screen and (max-height: 2560px){
+     .content-container{
+        width: 110%;
+        height: 100%;
+        background-color:#84a7c4;
+        border-radius: 0.8rem;
+        margin-bottom: 0.7rem;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+    
+}
